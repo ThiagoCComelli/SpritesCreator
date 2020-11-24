@@ -86,8 +86,6 @@ function App() {
     backgroundImage.src = background
 
     contextRef.current.drawImage(backgroundImage,0,0)
-
-
   }
 
   const deleteMiniature = ([miniature,id]) => {
