@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/SpritesCreator/static/css/main.e5787f56.chunk.css",
+    "main.js": "/SpritesCreator/static/js/main.ce9a2a97.chunk.js",
+    "main.js.map": "/SpritesCreator/static/js/main.ce9a2a97.chunk.js.map",
+    "runtime-main.js": "/SpritesCreator/static/js/runtime-main.1057470c.js",
+    "runtime-main.js.map": "/SpritesCreator/static/js/runtime-main.1057470c.js.map",
+    "static/js/2.2cb13802.chunk.js": "/SpritesCreator/static/js/2.2cb13802.chunk.js",
+    "static/js/2.2cb13802.chunk.js.map": "/SpritesCreator/static/js/2.2cb13802.chunk.js.map",
+    "index.html": "/SpritesCreator/index.html",
+    "static/css/main.e5787f56.chunk.css.map": "/SpritesCreator/static/css/main.e5787f56.chunk.css.map",
+    "static/js/2.2cb13802.chunk.js.LICENSE.txt": "/SpritesCreator/static/js/2.2cb13802.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1057470c.js",
+    "static/js/2.2cb13802.chunk.js",
+    "static/css/main.e5787f56.chunk.css",
+    "static/js/main.ce9a2a97.chunk.js"
+  ]
+}
