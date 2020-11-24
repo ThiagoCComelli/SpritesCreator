@@ -1,0 +1,51 @@
+.miniature{
+    position: relative;
+    height: 90px;
+    margin-right: 20px;
+    border: solid black 1px;
+    cursor: pointer;
+}
+
+.miniature label{
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+
+.miniatureIcons{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 5px;
+    transition: 1s;
+}
+
+.miniIcons{
+    transition: .2s;
+    cursor: pointer;
+}
+
+.miniIcons:hover{
+    scale: 1.25;
+}
+
+.miniIcons:nth-child(1):hover{
+    color: blue;
+}
+
+.miniIcons:nth-child(2):hover{
+    color: green;
+}
+
+.miniIcons:nth-child(3):hover{
+    color: red;
+}
+
+.green{
+    color: green;
+}
+
+.miniatureMask{
+    border: 2px solid green;
+}

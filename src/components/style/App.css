@@ -1,0 +1,112 @@
+.App{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.75) inset;
+}
+
+.canvasDiv{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: solid 1px black;
+    margin-bottom: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.canvasOptions{
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    border: solid 1px black;
+    margin-bottom: 5px;
+    bottom: 0;
+    padding: 5px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.canvasOptionsBox{
+    position: relative;
+    height: 100%;
+    border: 1px solid black;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.canvasColorPicker{
+    width: 150px;
+}
+
+.canvasColorPicker input{
+    height: 100%;
+    width: 100%;
+    border: solid black 1px;
+    cursor: pointer;
+}
+
+.canvasColorPicker strong {
+    position: absolute;
+    color: aliceblue;
+    font-size: large;
+    text-transform: uppercase;
+    right: 10px;
+    bottom: 5px;
+    user-select: none;
+}
+
+.canvasStrokePicker{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.canvasStrokePicker select{
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.canvasLineWidth {
+    display: flex;
+    flex-direction: column;
+}
+
+.canvasLineWidth input{
+    cursor: pointer;
+    width: 100px;
+    border: 1px solid black;
+    background-color: white;
+    padding-left: 5px;
+}
+
+.canvasClear button, .canvasNewLayer button, .canvasReset button{
+    cursor: pointer;
+    height: 100%;
+    border: solid black 1px;
+    background-color: white;
+    padding: 0 20px 0 20px;
+    transition: 1s;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.canvasNewLayer button:hover{
+    background-color: green;
+    color: white;
+}
+
+.canvasClear button:hover{
+    background-color: red;
+    color: white;
+}
+
+.canvasReset button:hover{
+    background-color: yellow;
+}
