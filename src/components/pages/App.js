@@ -1,5 +1,6 @@
 import React, {useRef, useEffect, useState} from 'react'
 import Miniature from '../components/Miniature'
+import {FaEraser} from 'react-icons/fa'
 
 import '../style/App.css'
 
@@ -45,6 +46,9 @@ function App() {
 
   const startDraw = ({nativeEvent}) => {
     const {offsetX,offsetY} = nativeEvent
+    if(pencil.color === 'erase'){
+      contextRef.current.globalCompositeOperation = 'destination-out'
+    }
     contextRef.current.beginPath()
     contextRef.current.moveTo(offsetX,offsetY)
     setActive(true)
@@ -64,6 +68,12 @@ function App() {
     contextRef.current.closePath()
     setActive(false)
   }
+
+  // const onePixelDraw = ({nativeEvent}) => {
+  //   const {offsetX,offsetY} = nativeEvent
+  //   contextRef.current.fillRect(offsetX,offsetY,pencil.lineWidth,pencil.lineWidth)
+  // }
+
 
   const changeBackground = ([background,id]) => {
     var back = background
@@ -116,6 +126,9 @@ function App() {
             navigator.clipboard.writeText(pencil.color)
             alert(`Color copied: ${pencil.color}`)
           }}>{pencil.color}</strong>
+        </div>
+        <div className="canvasEraser canvasOptionsBox">
+          <FaEraser onClick={(e) => {changePencil({...pencil,color:"erase"})}} className="FaEraser" size={40} />
         </div>
         <div className="canvasStrokePicker canvasOptionsBox">
           <label htmlFor="lineCap">LineCap:</label>
