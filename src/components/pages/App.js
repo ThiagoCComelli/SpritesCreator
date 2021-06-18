@@ -24,6 +24,8 @@ function App() {
     const canvas = canvasRef.current
     const context = canvas.getContext('2d')
 
+    context.imageSmoothingEnabled = context.mozImageSmoothingEnabled = context.webkitImageSmoothingEnabled = false;
+
     canvas.width = document.getElementById("canvas").clientWidth
     canvas.height = document.getElementById("canvas").clientHeight
     canvas.style.width = `100%`
@@ -46,8 +48,11 @@ function App() {
 
   const startDraw = ({nativeEvent}) => {
     const {offsetX,offsetY} = nativeEvent
+    console.log(pencil.color)
     if(pencil.color === 'erase'){
       contextRef.current.globalCompositeOperation = 'destination-out'
+    } else {
+      contextRef.current.globalCompositeOperation = 'destination-over'
     }
     contextRef.current.beginPath()
     contextRef.current.moveTo(offsetX,offsetY)
