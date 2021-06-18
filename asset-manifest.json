@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/SpritesCreator/static/css/main.eaecc2f1.chunk.css",
-    "main.js": "/SpritesCreator/static/js/main.0735462f.chunk.js",
-    "main.js.map": "/SpritesCreator/static/js/main.0735462f.chunk.js.map",
+    "main.css": "/SpritesCreator/static/css/main.8c8cbe4b.chunk.css",
+    "main.js": "/SpritesCreator/static/js/main.db3d8ccf.chunk.js",
+    "main.js.map": "/SpritesCreator/static/js/main.db3d8ccf.chunk.js.map",
     "runtime-main.js": "/SpritesCreator/static/js/runtime-main.1057470c.js",
     "runtime-main.js.map": "/SpritesCreator/static/js/runtime-main.1057470c.js.map",
     "static/js/2.20e7f572.chunk.js": "/SpritesCreator/static/js/2.20e7f572.chunk.js",
     "static/js/2.20e7f572.chunk.js.map": "/SpritesCreator/static/js/2.20e7f572.chunk.js.map",
     "index.html": "/SpritesCreator/index.html",
-    "static/css/main.eaecc2f1.chunk.css.map": "/SpritesCreator/static/css/main.eaecc2f1.chunk.css.map",
+    "static/css/main.8c8cbe4b.chunk.css.map": "/SpritesCreator/static/css/main.8c8cbe4b.chunk.css.map",
     "static/js/2.20e7f572.chunk.js.LICENSE.txt": "/SpritesCreator/static/js/2.20e7f572.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1057470c.js",
     "static/js/2.20e7f572.chunk.js",
-    "static/css/main.eaecc2f1.chunk.css",
-    "static/js/main.0735462f.chunk.js"
+    "static/css/main.8c8cbe4b.chunk.css",
+    "static/js/main.db3d8ccf.chunk.js"
   ]
 }
